@@ -1,4 +1,5 @@
 import React from 'react'
+import TestComp from './TestComponent'
 
 // arrow function
 const Mango = () => {
@@ -14,6 +15,7 @@ function Sample() {
         <div>Sample
             <Mango />
             <Grapes />
+            <TestComp />
         </div>
     )
 }
