@@ -6,6 +6,7 @@ const Mango = () => {
     return (<h2>Mangoes are sweet</h2>)
 }
 
+// arrow function
 const Grapes = () => {
     return (<h2>Grapes are good</h2>)
 }
