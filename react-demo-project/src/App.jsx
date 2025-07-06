@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 
 function App() {
 
@@ -6,13 +7,17 @@ function App() {
     let b = "Bananas"
 
     return (
-        //<div>
-        //    <h1>Javascript XML</h1>
-        //</div>
+        /*<div>
+            <h1>Javascript XML</h1>
+        </div>*/
 
-        <section>
+        /*<section>
             <h1>I like {a} & {b}</h1>
-        </section>
+        </section>*/
+
+        <div className="firstElement">
+            <p className="elementPara">Created first element</p>
+        </div>
     )
 }
 
