@@ -18,7 +18,13 @@ function App() {
         <div className="firstElement">
             <p className="elementPara">Created first element</p>
 
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg"/>
+            {/*Note: Images in img tag can either be in jpg or png format>*/}
+
+            {/*Added image from external source>*/}
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg" />
+
+            {/*Added image locally>*/}
+            <img src="images/image.jpg" alt="Image not found"/>
         </div>
     )
 }
