@@ -4,6 +4,7 @@ import FirstComp from './propsContainer/FirstComp'
 import SecondComp from './propsContainer/SecondComp'
 import ThirdComp from './propsContainer/ThirdComp'
 import FourthComp from './propsContainer/FourthComp'
+import StateMgmt from './StateMgmt'
 
 function App() {
 
@@ -14,6 +15,13 @@ function App() {
         name: "Shubankar",
         city: "Hyderabad",
         area: "Ameerpet"
+    }
+
+    const myCar = {
+        model: "Maruti",
+        year: 2022,
+        dealer: "Nixon",
+        color: "red"
     }
 
     return (
@@ -31,18 +39,23 @@ function App() {
             {*//*Note: Images in img tag can either be in jpg or png format>*//*}
 
 {*//*Added image from external source>*//*}
-                    <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg" />
-            
-                    {*//*Added image locally>*//*}
-    <img className='localImage' src="images/image.jpg" alt="Image not found" />
+                            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg" />
+                    
+                            {*//*Added image locally>*//*}
+<img className='localImage' src="images/image.jpg" alt="Image not found" />
 </div>*/
 
 
-        < div className='' >
+        /*< div className='' >
             <FirstComp userName={user.name} />
             <SecondComp userName="Satish" />
             <ThirdComp userName="Yeshwanth" />
             <FourthComp userName="Santosh" />
+        </div>*/
+
+        <div className="container">
+            <SecondComp myCar={myCar} />
+            <StateMgmt/>
         </div>
     )
 }
