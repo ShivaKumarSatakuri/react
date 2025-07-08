@@ -24,7 +24,7 @@ function App() {
             <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg" />
 
             {/*Added image locally>*/}
-            <img src="images/image.jpg" alt="Image not found"/>
+            <img className='localImage' src="images/image.jpg" alt="Image not found" />
         </div>
     )
 }
