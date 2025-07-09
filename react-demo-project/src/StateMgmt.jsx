@@ -7,6 +7,9 @@ const StateMgmt = () => {
 
     console.log(city)
 
+    /*setCity("Mumbai")
+    console.log(city)*/
+
     return (
         <div>
             StateMgmt
