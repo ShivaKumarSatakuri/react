@@ -7,12 +7,20 @@ const StateMgmt = () => {
 
     console.log(city)
 
+    //testing setState function
     /*setCity("Mumbai")
     console.log(city)*/
 
+    if (city === "Hyderabad") {
+        setCity("Bangalore")
+    } else {
+        setCity("Goa")
+    }
+
     return (
         <div>
-            StateMgmt
+            {/*StateMgmt*/}
+            <h1>I live in {city}</h1>
         </div>
     )
 }
