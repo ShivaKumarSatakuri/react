@@ -6,7 +6,9 @@ import ThirdComp from './propsContainer/ThirdComp'
 import FourthComp from './propsContainer/FourthComp'
 import StateMgmt from './StateMgmt'
 
-function App() {
+import { useState } from 'react'
+
+/*function App() {
 
     let a = "Apples"
     let b = "Bananas"
@@ -25,15 +27,15 @@ function App() {
     }
 
     return (
-        /*<div>
+        *//*<div>
             <h1>Javascript XML</h1>
-        </div>*/
+        </div>*//*
 
-        /*<section>
+        *//*<section>
             <h1>I like {a} & {b}</h1>
-        </section>*/
+        </section>*//*
 
-        /*<div className="firstElement">
+        *//*<div className="firstElement">
             <p className="elementPara">Created first element</p>
 
             {*//*Note: Images in img tag can either be in jpg or png format>*//*}
@@ -43,19 +45,33 @@ function App() {
                     
                             {*//*Added image locally>*//*}
 <img className='localImage' src="images/image.jpg" alt="Image not found" />
-</div>*/
+</div>*//*
 
 
-        /*< div className='' >
+        *//*< div className='' >
             <FirstComp userName={user.name} />
             <SecondComp userName="Satish" />
             <ThirdComp userName="Yeshwanth" />
             <FourthComp userName="Santosh" />
-        </div>*/
+        </div>*//*
 
         <div className="container">
             <SecondComp myCar={myCar} />
             <StateMgmt/>
+        </div>
+    )
+}*/
+
+const App = () => {
+
+    const [sampleCondition, setSampleCondition] = useState(true)
+
+    //sampleCondition ? "This is true statement" : "This is false statement"
+
+    return (
+        <div>
+            <h1>Welcome to React</h1>
+            {sampleCondition ? "This is true statement" : "This is false statement"}
         </div>
     )
 }
