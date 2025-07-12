@@ -28,17 +28,17 @@ import { useState } from 'react'
 
     return (
         *//*<div>
-            <h1>Javascript XML</h1>
-        </div>*//*
+    <h1>Javascript XML</h1>
+</div>*//*
 
-        *//*<section>
-            <h1>I like {a} & {b}</h1>
-        </section>*//*
+*//*<section>
+    <h1>I like {a} & {b}</h1>
+</section>*//*
 
-        *//*<div className="firstElement">
-            <p className="elementPara">Created first element</p>
+*//*<div className="firstElement">
+    <p className="elementPara">Created first element</p>
 
-            {*//*Note: Images in img tag can either be in jpg or png format>*//*}
+    {*//*Note: Images in img tag can either be in jpg or png format>*//*}
 
 {*//*Added image from external source>*//*}
                             <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg" />
@@ -49,17 +49,17 @@ import { useState } from 'react'
 
 
         *//*< div className='' >
-            <FirstComp userName={user.name} />
-            <SecondComp userName="Satish" />
-            <ThirdComp userName="Yeshwanth" />
-            <FourthComp userName="Santosh" />
-        </div>*//*
+    <FirstComp userName={user.name} />
+    <SecondComp userName="Satish" />
+    <ThirdComp userName="Yeshwanth" />
+    <FourthComp userName="Santosh" />
+</div>*//*
 
-        <div className="container">
-            <SecondComp myCar={myCar} />
-            <StateMgmt/>
-        </div>
-    )
+<div className="container">
+    <SecondComp myCar={myCar} />
+    <StateMgmt/>
+</div>
+)
 }*/
 
 const App = () => {
@@ -72,6 +72,9 @@ const App = () => {
         <div>
             <h1>Welcome to React</h1>
             {sampleCondition ? "This is true statement" : "This is false statement"}
+
+            {/*rendering components in terinary operator*/}
+            {sampleCondition ? <FirstComp /> : "This is false statement"}
         </div>
     )
 }
