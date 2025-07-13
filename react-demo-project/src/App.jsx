@@ -7,6 +7,7 @@ import FourthComp from './propsContainer/FourthComp'
 import StateMgmt from './StateMgmt'
 
 import { useState } from 'react'
+import ClickEvent from './ClickEvent'
 
 /*function App() {
 
@@ -28,7 +29,7 @@ import { useState } from 'react'
 
     return (
         *//*<div>
-    <h1>Javascript XML</h1>
+<h1>Javascript XML</h1>
 </div>*//*
 
 *//*<section>
@@ -49,10 +50,10 @@ import { useState } from 'react'
 
 
         *//*< div className='' >
-    <FirstComp userName={user.name} />
-    <SecondComp userName="Satish" />
-    <ThirdComp userName="Yeshwanth" />
-    <FourthComp userName="Santosh" />
+<FirstComp userName={user.name} />
+<SecondComp userName="Satish" />
+<ThirdComp userName="Yeshwanth" />
+<FourthComp userName="Santosh" />
 </div>*//*
 
 <div className="container">
@@ -62,7 +63,7 @@ import { useState } from 'react'
 )
 }*/
 
-const App = () => {
+/*const App = () => {
 
     const [sampleCondition, setSampleCondition] = useState(true)
 
@@ -73,8 +74,19 @@ const App = () => {
             <h1>Welcome to React</h1>
             {sampleCondition ? "This is true statement" : "This is false statement"}
 
-            {/*rendering components in terinary operator*/}
-            {sampleCondition ? <FirstComp /> : "This is false statement"}
+            {*//*rendering components in terinary operator*//*}
+{sampleCondition ? <FirstComp /> : "This is false statement"}
+</div>
+)
+}*/
+
+const App = () => {
+    return (
+        <div>
+            <h1>
+                Welcome to React
+                <ClickEvent />
+            </h1>
         </div>
     )
 }
