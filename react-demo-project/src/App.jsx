@@ -8,6 +8,7 @@ import StateMgmt from './StateMgmt'
 
 import { useState } from 'react'
 import ClickEvent from './ClickEvent'
+import Resize from './Resize'
 
 /*function App() {
 
@@ -80,12 +81,24 @@ import ClickEvent from './ClickEvent'
 )
 }*/
 
-const App = () => {
+//ClickEvent
+/*const App = () => {
     return (
         <div>
             <h1>
                 Welcome to React
                 <ClickEvent />
+            </h1>
+        </div>
+    )
+}*/
+
+const App = () => {
+    return (
+        <div>
+            <h1>
+                Welcome to React
+                <Resize />
             </h1>
         </div>
     )
