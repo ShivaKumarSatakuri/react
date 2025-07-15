@@ -27,7 +27,7 @@ const Resize = () => {
             <h1>Screen Size Example</h1>
             <p>Resize the window to see the screen size:</p>
             <p style={{ color: "Teal" }}> width: {screenSize.width}</p>
-            <p style={{ color: "Green" }}> height: {screenSize.height}</p>
+            <p style={{ color: "Yellow" }}> height: {screenSize.height}</p>
         </div>
     );
 
