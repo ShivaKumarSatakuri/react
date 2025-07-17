@@ -9,6 +9,7 @@ import StateMgmt from './StateMgmt'
 import { useState } from 'react'
 import ClickEvent from './ClickEvent'
 import Resize from './Resize'
+import SampleArray from './SampleArray'
 
 /*function App() {
 
@@ -93,7 +94,8 @@ import Resize from './Resize'
     )
 }*/
 
-const App = () => {
+//Testing resizing window
+/*const App = () => {
     return (
         <div>
             <h1>
@@ -103,5 +105,19 @@ const App = () => {
         </div>
     )
 }
+*/
+
+
+const App = () => {
+    return (
+        <div>
+            <h1>
+                Welcome to Sample array demo
+                <SampleArray />
+            </h1>
+        </div>
+    )
+}
+
 
 export default App
