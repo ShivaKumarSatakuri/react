@@ -10,6 +10,7 @@ import { useState } from 'react'
 import ClickEvent from './ClickEvent'
 import Resize from './Resize'
 import SampleArray from './SampleArray'
+import MapTest from './MapTest'
 
 /*function App() {
 
@@ -108,7 +109,8 @@ import SampleArray from './SampleArray'
 */
 
 
-const App = () => {
+//Testing simple array
+/*const App = () => {
     return (
         <div>
             <h1>
@@ -117,7 +119,17 @@ const App = () => {
             </h1>
         </div>
     )
-}
+}*/
 
+const App = () => {
+    return (
+        <div>
+            <h1>
+                Welcome to Sample array demo
+                <MapTest />
+            </h1>
+        </div>
+    )
+}
 
 export default App
