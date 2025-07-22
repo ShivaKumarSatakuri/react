@@ -11,6 +11,7 @@ import ClickEvent from './ClickEvent'
 import Resize from './Resize'
 import SampleArray from './SampleArray'
 import MapTest from './MapTest'
+import { userData } from './data'
 
 /*function App() {
 
@@ -120,6 +121,19 @@ import MapTest from './MapTest'
         </div>
     )
 }*/
+
+//Creating and read data from map
+/*const App = () => {
+    return (
+        <div>
+            <h1>
+                Welcome to Sample array demo
+                <MapTest />
+            </h1>
+        </div>
+    )*/
+
+console.log(userData)
 
 const App = () => {
     return (
