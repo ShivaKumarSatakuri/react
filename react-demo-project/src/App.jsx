@@ -138,10 +138,21 @@ console.log(userData)
 const App = () => {
     return (
         <div>
-            <h1>
-                Welcome to Sample array demo
-                <MapTest />
-            </h1>
+            {
+                userData.map((user) => {
+                    return (
+                        <div>
+                            <div>
+                                {user.username}
+                            </div>
+                            <div>
+                                {user.email}
+                            </div>
+                            <br />
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
