@@ -148,6 +148,9 @@ const App = () => {
                             <div>
                                 {user.email}
                             </div>
+                            <div>
+                                Street: {user.address.street}
+                            </div>
                             <br />
                         </div>
                     )
