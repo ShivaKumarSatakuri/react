@@ -133,8 +133,10 @@ import { userData } from './data'
         </div>
     )*/
 
+//printing json data
 console.log(userData)
 
+//iterating json and displaying inner objects
 const App = () => {
     return (
         <div>
