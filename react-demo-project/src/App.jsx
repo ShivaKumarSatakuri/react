@@ -12,6 +12,7 @@ import Resize from './Resize'
 import SampleArray from './SampleArray'
 import MapTest from './MapTest'
 import { userData } from './data'
+import TemplateStringsDemo from './TemplateStringsDemo'
 
 /*function App() {
 
@@ -134,10 +135,10 @@ import { userData } from './data'
     )*/
 
 //printing json data
-console.log(userData)
+//console.log(userData)
 
 //iterating json and displaying inner objects
-const App = () => {
+/*const App = () => {
     return (
         <div>
             {
@@ -158,6 +159,14 @@ const App = () => {
                     )
                 })
             }
+        </div>
+    )
+}*/
+
+const App = () => {
+    return (
+        <div>
+            <TemplateStringsDemo />
         </div>
     )
 }
