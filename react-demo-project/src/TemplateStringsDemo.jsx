@@ -4,7 +4,9 @@ let temp = "Shiva"
 
 const TemplateStringsDemo = () => {
     return (
-        <div>{`This is a template String with dynamic value ${temp}`}        </div>
+        <div>
+            {`This is a template String with dynamic value ${temp}`}
+        </div>
     )
 }
 
