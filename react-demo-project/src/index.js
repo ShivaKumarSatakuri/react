@@ -5,6 +5,7 @@ import App from './App';
 //import reportWebVitals from './reportWebVitals';
 
 //Todo : need to come up wth a plan for react
+//undestand dom and root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
