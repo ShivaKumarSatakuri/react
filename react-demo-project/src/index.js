@@ -6,6 +6,7 @@ import App from './App';
 
 //Todo : need to come up wth a plan for react
 //undestand dom and root
+//Started understanding dom manipulation
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
