@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './App';
+import BankApp from './BankApp';
 //import reportWebVitals from './reportWebVitals';
 
 //Todo : need to come up wth a plan for react
@@ -10,7 +11,8 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    //<App />
+    <BankApp/>
   </React.StrictMode>
 );
 
