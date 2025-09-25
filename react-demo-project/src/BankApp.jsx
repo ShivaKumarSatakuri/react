@@ -2,7 +2,10 @@ import React, { useState } from "react";
 
 export default function BankApp() {
 
-    //Reacct always maintains the state of the input fields using useSate hook
+    // Reacct always maintains the state of the input fields using useSate hook
+    // method name is setForm
+    // variable name is form
+    // useState is actually setting default vaues for all the fields in the form
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
