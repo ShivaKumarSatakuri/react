@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 export default function BankApp() {
 
-    // Reacct always maintains the state of the input fields using useSate hook
-    // method name is setForm
-    // variable name is form
-    // useState is actually setting default vaues for all the fields in the form
+/* Reacct always maintains the state of the input fields using useSate hook
+    method name is setForm
+    variable name is form
+    useState is actually setting default vaues for all the fields in the form */
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -15,6 +15,10 @@ export default function BankApp() {
     accountType: "savings",
   });
 
+  /* Creating setUsers method of type useState to update the users state
+    Everytime setUsers function is invoked, data will be saved in users, but not stored anywhere
+    as useSate([]) is doing nothing. Data will be cleared
+   */
   const [users, setUsers] = useState([]);
 
   const handleChange = (e) => {
