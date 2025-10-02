@@ -140,7 +140,7 @@ export default function BankApp() {
       </div>
 
       {/* Accounts List */}
-      {/* <div className="mt-6 w-full max-w-2xl">
+      <div className="mt-6 w-full max-w-2xl">
         <h3 className="text-lg font-bold mb-2">Accounts</h3>
         {users.map((user) => (
           <div
@@ -148,16 +148,16 @@ export default function BankApp() {
             className="bg-white shadow-md rounded-xl p-4 mb-3 flex justify-between items-center"
           >
             <div>
-              <p><b>{user.firstName} {user.lastName}</b> ({user.email})</p>
+              <p><b>{user.firstName} {user.lastName}</b> | ({user.email})</p>
               <p>DOB: {user.dob}, Gender: {user.gender}, Type: {user.accountType}</p>
             </div>
             <div className="flex gap-2">
-              <button
+              {/* <button
                 onClick={() => handleUpdate(user.id)}
                 className="px-3 py-1 border rounded text-blue-600 border-blue-600"
               >
                 Update
-              </button>
+              </button> */}
               <button
                 onClick={() => handleDelete(user.id)}
                 className="px-3 py-1 border rounded text-red-600 border-red-600"
@@ -167,7 +167,7 @@ export default function BankApp() {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
