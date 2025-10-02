@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function BankApp() {
 
-/* Reacct always maintains the state of the input fields using useSate hook
+/* React always maintains the state of the input fields using useSate hook
     method name is setForm
     variable name is form
     useState is actually setting default vaues for all the fields in the form */
@@ -140,7 +140,7 @@ export default function BankApp() {
       </div>
 
       {/* Accounts List */}
-      <div className="mt-6 w-full max-w-2xl">
+      {/* <div className="mt-6 w-full max-w-2xl">
         <h3 className="text-lg font-bold mb-2">Accounts</h3>
         {users.map((user) => (
           <div
@@ -167,7 +167,7 @@ export default function BankApp() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
