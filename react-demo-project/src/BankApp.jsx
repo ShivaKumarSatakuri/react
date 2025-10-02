@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 export default function BankApp() {
 
-/* React always maintains the state of the input fields using useSate hook
-    method name is setForm
-    variable name is form
-    useState is actually setting default vaues for all the fields in the form */
+  /* React always maintains the state of the input fields using useSate hook
+      method name is setForm
+      variable name is form
+      useState is actually setting default vaues for all the fields in the form */
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -30,7 +30,15 @@ export default function BankApp() {
     e.preventDefault();
     const newUser = { id: Date.now(), ...form };
     setUsers([...users, newUser]);
-    console.log("CREATE:", JSON.stringify(newUser, null, 2));
+    var tempUser = JSON.stringify(newUser, null, 2)
+
+    fetch('http://localhost:3010/users', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: tempUser
+    })
+    
+    console.log("CREATE:", tempUser);
     setForm({ firstName: "", lastName: "", email: "", dob: "", gender: "", accountType: "savings" });
   };
 
@@ -43,6 +51,10 @@ export default function BankApp() {
   };
 
   const handleDelete = (id) => {
+    const userToDelete = users.filter((u)=> u.id === id)
+    console.log('User to delete is: ', userToDelete)
+    fetch(`http://localhost:3010/users/${userToDelete.id}`, { method: 'DELETE' })
+    //await Promise.all(users.map(id => fetch(`http://localhost:3010/users/${id}`, { method: 'DELETE' })))
     const filtered = users.filter((u) => u.id !== id);
     setUsers(filtered);
     console.log("DELETE: user with id", id);
