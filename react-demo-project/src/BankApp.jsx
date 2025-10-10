@@ -42,6 +42,7 @@ export default function BankApp() {
     setForm({ firstName: "", lastName: "", email: "", dob: "", gender: "", accountType: "savings" });
   };
 
+  // Need to work on handleUpdate tomorrow and make sure jsonServer is able to update it
   const handleUpdate = (id) => {
     const updatedUsers = users.map((u) =>
       u.id === id ? { ...u, ...form } : u
